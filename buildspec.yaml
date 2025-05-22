@@ -14,7 +14,7 @@ phases:
     commands:
     - echo "Building the project..."
     - ng build -c production
-  artifacts:
-    base-directory: dist/my-angular-app # Adjust this path based on your project structure
-    files:
-    - '**/*' # Adjust this path based on your build output
+artifacts:
+  base-directory: dist/my-angular-app # Adjust this path based on your project structure
+  files:
+  - '**/*' # Adjust this path based on your build output
