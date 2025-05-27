@@ -13,7 +13,9 @@ phases:
   build:
     commands:
     - echo "Building the project..."
-    - ng build -c production
+    - ng build --prod
+    finally:
+    - echo "Build completed successfully."
 artifacts:
   files:
   - 'dist/my-angular-project/**/*' # Adjust this path based on your build output
