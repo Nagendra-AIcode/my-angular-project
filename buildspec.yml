@@ -15,6 +15,7 @@ phases:
     - echo "Building the project..."
     - ng build -c production
 artifacts:
-  base-directory: dist/my-angular-project # Adjust this path based on your project structure
   files:
-  - '**/*' # Adjust this path based on your build output
+  - 'dist/my-angular-project/**/*' # Adjust this path based on your build output
+  - 'appspec.yml' # Corrected the typo here
+  - 'deploy-scripts/**/*' # Include your deployment scripts
